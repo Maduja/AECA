@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AECA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* HERO IMAGE ZOOM ANIMATION */
+    @keyframes slowZoom {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .animate-slow-zoom {
+      animation: slowZoom 8s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-white scroll-smooth">
+
+<!-- ✅✅ FULL 3-PART NAVBAR ✅✅ -->
+<header id="header" class="w-full fixed top-0 left-0 z-50 shadow">
+  
+  <!-- ✅ TOP BAR -->
+  <div class="bg-[#1F3C77] text-white text-sm py-3 px-4 md:px-6 flex justify-between items-center font-bold">
+
+    <div class="hidden md:flex space-x-6">
+      <a href="faq.html" class="hover:text-[#FFD700] transition">FAQs</a>
+      <a href="why_choose_us.html" class="hover:text-[#FFD700] transition">Why Choose Us</a>
+    </div>
+
+    <div class="hidden md:flex space-x-6">
+      <a href="events.html" class="hover:text-[#FFD700] transition">Events</a>
+      <a href="https://www.google.com/maps/dir//Athurugiriya+Rd,+Malabe"
+         target="_blank"
+         class="hover:text-[#FFD700] transition">Location</a>
+    </div>
+
+    <!-- ✅ Mobile menu icon -->
+    <div class="md:hidden">
+      <button id="mobileToggle" class="text-white text-2xl font-bold">☰</button>
+    </div>
+
+  </div>
+
+  <!-- ✅ LOGO SECTION -->
+  <div class="bg-[#F0EBD8] py-4 flex flex-col justify-center items-center border-y-2 border-[#1F3C77] px-4 text-center">
+    <div class="flex items-center space-x-3 mb-2">
+      <img src="assets/logoo.png" class="h-[80px] object-contain">
+      <h1 class="text-[#1F3C77] font-extrabold text-3xl md:text-4xl">AECA</h1>
+    </div>
+    <p class="text-[#1F3C77] font-semibold text-sm md:text-base">
+      Academy of English for Career Advancement
+    </p>
+  </div>
+
+  <!-- ✅ Desktop Nav -->
+  <nav id="mainNav"
+    class="bg-[#F8F6F2] px-4 md:px-6 border-b border-[#1F3C77] hidden md:flex justify-center font-medium text-[#233651] text-sm py-3">
+
+    <div class="flex items-center space-x-6">
+      <a href="#home" class="nav-link px-3 py-1 rounded-md">Home</a>
+      <a href="#about" class="nav-link px-3 py-1 rounded-md">About</a>
+      <a href="#courses" class="nav-link px-3 py-1 rounded-md">Courses</a>
+      <a href="#staff" class="nav-link px-3 py-1 rounded-md">Staff</a>
+      <a href="#contact" class="nav-link px-3 py-1 rounded-md">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- ✅ Mobile Menu -->
+  <nav id="mobileMenu"
+    class="bg-[#F8F6F2] px-6 py-4 border-t border-[#1F3C77] md:hidden space-y-3 text-sm text-[#233651] font-medium shadow-lg hidden">
+
+    <a href="#home" class="mobile-link block px-3 py-2 rounded-md">Home</a>
+    <a href="#about" class="mobile-link block px-3 py-2 rounded-md">About</a>
+    <a href="#courses" class="mobile-link block px-3 py-2 rounded-md">Courses</a>
+    <a href="#staff" class="mobile-link block px-3 py-2 rounded-md">Staff</a>
+    <a href="#contact" class="mobile-link block px-3 py-2 rounded-md">Contact</a>
+
+    <a href="faq.html" class="block px-3 py-2 rounded-md">FAQs</a>
+    <a href="why_choose_us.html" class="block px-3 py-2 rounded-md">Why Choose Us</a>
+    <a href="events.html" class="block px-3 py-2 rounded-md">Events</a>
+    <a href="https://www.google.com/maps/" class="block px-3 py-2 rounded-md">Location</a>
+
+  </nav>
+
+</header>
+
+
+<!-- ✅ HOME SECTION — FIXED ✅ -->
+<section id="home" class="relative bg-[#4E0110] py-3 pt-[260px] scroll-mt-[260px]">
+
+  <div class="mx-auto w-[93%] relative">
+    <img src="assets/m.jpg"
+      class="w-full h-[500px] object-cover opacity-90 rounded-md animate-slow-zoom">
+
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="bg-black bg-opacity-60 text-white w-[75%] px-10 py-6 rounded-xl text-center text-lg font-semibold leading-relaxed">
+        AECA is a premier English language academy dedicated to helping individuals
+        achieve their language goals, whether for academic pursuits, professional
+        advancement, or personal enrichment.
+        <br><br>
+        Our comprehensive programs focus on international exam preparation, English
+        for non-native speakers, and essential English skills required for career
+        enhancement.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ ABOUT SECTION -->
+<section id="about" class="bg-[#4E0110] py-12 scroll-mt-[350px]">
+
+  <h2 class="text-3xl font-bold text-white text-center mb-10">About Us</h2>
+
+  <div class="w-[93%] mx-auto bg-[#0D0630] rounded-2xl border-4 border-[#1F3C77] p-10 flex flex-col md:flex-row items-center gap-10">
+
+    <div class="md:w-1/2 text-lg text-white space-y-4 text-justify leading-relaxed">
+      <p>
+                Our mission is to empower learners through high-quality English language education, enabling them to excel in international examinations, communicate effectively in professional settings, and pursue their career aspirations confidently.
+              </p>
+              <p>
+                Our vision is to create a supportive and engaging learning environment where every student can develop strong English language skills, build confidence, and unlock new opportunities for academic and professional success worldwide.
+              </p>
+    </div>
+
+    <div class="md:w-1/2">
+      <img src="assets/aboutt.png" class="rounded-xl w-full max-w-[400px] h-[400px] mx-auto object-contain">
+    </div>
+
+  </div>
+
+  <!-- ✅ COURSE OPTIONS -->
+  <div class="mt-16 w-[93%] mx-auto">
+    <h3 class="text-2xl font-semibold text-white text-center mb-2">Course Options</h3>
+    <div class="w-24 h-1 bg-white mx-auto mb-8 rounded-full"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+      <div class="space-y-5">
+        <img src="assets/group.jpg" class="rounded-xl w-full h-[220px] object-cover">
+        <h4 class="text-xl font-semibold text-white">Small Group Classes</h4>
+        <p class="text-[#A5C4D4]">Only 5 students per class. Instructor gives individual attention.</p>
+      </div>
+
+      <div class="space-y-5">
+        <img src="assets/individual.jpg" class="rounded-xl w-full h-[220px] object-cover">
+        <h4 class="text-xl font-semibold text-white">Individual Sessions</h4>
+        <p class="text-[#A5C4D4]">Schedule classes based on your availability and preference.</p>
+      </div>
+
+      <div class="space-y-5">
+        <img src="assets/certificate.jpg" class="rounded-xl w-full h-[220px] object-cover">
+        <h4 class="text-xl font-semibold text-white">Certificate Courses</h4>
+        <p class="text-[#A5C4D4]">Earn recognized certificates for Spoken English courses.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ✅ Student Feedback -->
+  <div class="mt-16 w-[93%] mx-auto">
+    <h3 class="text-2xl font-semibold text-white text-center mb-2">Student Feedback</h3>
+    <div class="w-24 h-1 bg-white mx-auto mb-8 rounded-full"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <video src="assets/feedback01.mp4" controls class="rounded-xl w-full h-[220px] object-cover"></video>
+      <video src="assets/feedback02.mp4" controls class="rounded-xl w-full h-[220px] object-cover"></video>
+      <video src="assets/feedback03.mp4" controls class="rounded-xl w-full h-[220px] object-cover"></video>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ✅ COURSES SECTION -->
+<section id="courses" class="bg-[#4E0110] py-12 scroll-mt-[350px]">
+
+  <h2 class="text-3xl font-bold text-white text-center mb-3">AECA Courses</h2>
+
+  <p class="text-[#A5C4D4] text-lg text-center max-w-3xl mx-auto mb-10">
+    Discover our personalized and group English learning programs designed for academic, career, and personal growth.
+  </p>
+
+  <div class="w-[93%] mx-auto bg-[#0D0630] border-4 border-[#1F3C77] p-10 rounded-2xl shadow space-y-10">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- CARD TEMPLATE — repeated -->
+      <div class="course-card bg-white rounded-2xl shadow-md p-6">
+        <img src="assets/a.jpg" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-semibold text-[#800000] mb-2 text-center">IELTS (Individual / Group)</h3>
+        <p class="text-gray-700 text-base text-justify">
+          we specialize in preparing students for various internationally recognized English exams, including IELTS.
+          <span class="more-text hidden mt-2 block">
+            Our experienced instructors provide targeted training that covers all 04 areas of the exams, from reading and writing to speaking and listening, ensuring that students are well-equipped to achieve their desired scores.
+          </span>
+        </p>
+        <p class="toggle-btn text-sm text-blue-600 cursor-pointer mt-2 hover:underline text-right">See more</p>
+      </div>
+
+      <div class="course-card bg-white rounded-2xl shadow-md p-6">
+        <img src="assets/b.jpg" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-semibold text-[#800000] mb-2 text-center">PTE (Individual / Group)</h3>
+        <p class="text-gray-700 text-base text-justify">
+          We offer tailored PTE courses specifically for basic English speakers. These courses focus on building fundamental language skills,
+          <span class="more-text hidden mt-2 block">
+            enhancing vocabulary, and improving communication abilities in all PTE sections. Our immersive learning environment fosters confidence and fluency step by step.
+          </span>
+        </p>
+        <p class="toggle-btn text-sm text-blue-600 cursor-pointer mt-2 hover:underline text-right">See more</p>
+      </div>
+
+      <div class="course-card bg-white rounded-2xl shadow-md p-6">
+        <img src="assets/c.jpg" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-semibold text-[#800000] mb-2 text-center">⁠Spoken English for Career Advancement (SECA)</h3>
+        <p class="text-gray-700 text-base text-justify">
+          Understanding the importance of English proficiency in today’s global job market,
+          <span class="more-text hidden mt-2 block">
+           AECA provides specialized courses aimed at equipping professionals with the necessary language skills for career growth.These courses emphasize business communication, presentation skills, and networking strategies in English, enhancing employability and professional relationships.
+          </span>
+        </p>
+        <p class="toggle-btn text-sm text-blue-600 cursor-pointer mt-2 hover:underline text-right">See more</p>
+      </div>
+
+      <div class="course-card bg-white rounded-2xl shadow-md p-6">
+        <img src="assets/d.jpg" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-semibold text-[#800000] mb-2 text-center">General English (Local G1-13) / International (O/L & A/L) </h3>
+        <p class="text-gray-700 text-base text-justify">
+         At AECA we offer small group teaching specifically designed to prepare students for local and international school exams, focusing on the General English exam.
+          <span class="more-text hidden mt-2 block">
+            Our courses cater to both Ordinary Level (O/L) and Advanced Level (A/L) students, providing a tailored educational experience that emphasizes individualized attention and support.
+          </span>
+        </p>
+        <p class="toggle-btn text-sm text-blue-600 cursor-pointer mt-2 hover:underline text-right">See more</p>
+      </div>
+
+      <div class="course-card bg-white rounded-2xl shadow-md p-6">
+        <img src="assets/e.jpg" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-semibold text-[#800000] mb-2 text-center">English  Language for Kids (ELK)</h3>
+        <p class="text-gray-700 text-base text-justify">
+          For children learning English, small group instruction combined with individual attention can significantly enhance their language acquisition process.
+          <span class="more-text hidden mt-2 block">
+            ELK course provides small group support with individual attention for kids learning English is a powerful strategy that addresses their unique learning needs. By fostering a supportive environment where children feel safe to explore and practice.
+          </span>
+        </p>
+        <p class="toggle-btn text-sm text-blue-600 cursor-pointer mt-2 hover:underline text-right">See more</p>
+      </div>
+
+      <div class="course-card bg-white rounded-2xl shadow-md p-6">
+        <img src="assets/group.jpg" class="rounded-xl w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-semibold text-[#800000] mb-2 text-center">Professional Services for Career Advancement (PSCA)</h3>
+        <p class="text-gray-700 text-base text-justify">
+          Professional Services for Career Advancement (PSCA) offers comprehensive support in various writing domains to empower individuals in achieving their career goals.
+          <span class="more-text hidden mt-2 block">
+            Our expertise ranges from CV and resume writing to business proposal development, project report creation, assignment proofreading, and citation writing. We understand that each of these elements is crucial in presenting your skills and knowledge effectively. By leveraging our services, you can enhance your professional documentation, ensure clarity in your assignments, and make a lasting impression on potential employers or partners. In PSCA services , we are committed to your success and provide tailored assistance to meet your unique needs. Let us partner with you on your journey to professional advancement.
+          </span>
+        </p>
+        <p class="toggle-btn text-sm text-blue-600 cursor-pointer mt-2 hover:underline text-right">See more</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ STAFF SECTION -->
+<section id="staff" class="bg-[#4E0110] py-12 scroll-mt-[350px]">
+
+  <h2 class="text-3xl font-bold text-white text-center mb-10">Meet Our Instructors</h2>
+
+  <div class="w-[93%] mx-auto bg-[#0D0630] border-4 border-[#1F3C77] p-10 rounded-2xl shadow space-y-16">
+
+    <div>
+      <h3 class="text-2xl font-semibold text-white text-center mb-8">Founder</h3>
+
+      <div class="flex flex-wrap justify-center gap-6">
+        <img src="assets/instructor2.jpg" class="w-48 h-64 object-cover rounded-xl">
+        <img src="assets/instructor3.jpg" class="w-48 h-64 object-cover rounded-xl">
+        <img src="assets/instructor5.jpg" class="w-48 h-64 object-cover rounded-xl">
+      </div>
+
+      <div class="text-center mt-6 text-white leading-relaxed">
+        <p><strong>Ms. Kanchana Arachchi | Founder – AECA</strong></p>
+                <p>BA (Asian University for Women BD | California State University, L.B)</p>
+                <p>MA: MLRHRM (University of Colombo, Sri Lanka)</p>
+                <p>CIPM (CCHRM - Chartered Institute of Personnel Management Sri Lanka)</p>
+              
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-white text-center mb-8">Co-Founder & Managing Director</h3>
+
+      <div class="flex flex-wrap justify-center gap-6">
+        <img src="assets/cofounder1.jpg" class="w-48 h-64 object-cover rounded-xl">
+        <img src="assets/cofounder2.jpg" class="w-48 h-64 object-cover rounded-xl">
+      </div>
+
+      <div class="text-center mt-6 text-white leading-relaxed">
+        <p><strong>Mr. Anton Sujeeva Perera | Co-Founder & Managing Director – AECA</strong></p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- ✅ CONTACT SECTION -->
+<section id="contact" class="bg-[#4E0110] py-12 scroll-mt-[350px]">
+
+  <h2 class="text-3xl font-bold text-white text-center mb-10">Contact Us</h2>
+
+  <div class="w-[93%] mx-auto bg-[#0D0630] border-4 border-[#1F3C77] p-10 rounded-2xl shadow text-center space-y-8">
+
+    <p class="text-[#A5C4D4] text-lg max-w-2xl mx-auto">
+      Reach out to us for course details, enrollment support, or any inquiries. We're always happy to help!
+    </p>
+
+    <div class="flex flex-col items-center space-y-6 text-lg">
+
+      <!-- Email -->
+      <div class="flex items-center gap-3 bg-white px-6 py-3 rounded-xl shadow">
+        <svg class="w-6 h-6 text-[#1F3C77]" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2.94 6.34a2 2 0 012-2h10.12a2 2 0 012 2v.52l-7.06 4.12L2.94 6.86V6.34z"/>
+          <path d="M18 8.07l-6.72 3.92a2 2 0 01-2.04 0L2 8.07V14a2 2 0 002 2h12a2 2 0 002-2V8.07z"/>
+        </svg>
+        <span><strong>Email:</strong> aeca.edu.lk@gmail.com</span>
+      </div>
+
+      <!-- Phone -->
+      <div class="flex items-center gap-3 bg-white px-6 py-3 rounded-xl shadow">
+        <svg class="w-6 h-6 text-[#1F3C77]" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2.003 5.884C2.003 14.29 7.71 20 16.116 20c.602 0 1.18-.04 1.74-.117a1.7 1.7 0 001.43-1.31l.9-4.13a1.66 1.66 0 00-.96-1.85l-3.38-1.38a1.66 1.66 0 00-1.92.52l-1.1 1.36c-2.35-.78-4.47-2.88-5.25-5.25l1.36-1.1a1.67 1.67 0 00.52-1.92L7.43 2.77a1.66 1.66 0 00-1.85-.96l-4.13.9a1.7 1.7 0 00-1.31 1.43c-.08.56-.12 1.14-.12 1.75z"/>
+        </svg>
+        <span><strong>Phone:</strong> +94 76 220 0670</span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<!-- ✅ FOOTER -->
+  <footer class="bg-[#2e2e2e] text-white py-10 px-4 sm:px-10 mt-0">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
+    
+    <div>
+      <h2 class="text-lg font-bold mb-2">WELCOME TO</h2>
+      <h1 class="text-3xl font-bold mb-4">AECA ACADEMY</h1>
+      <p class="font-semibold">AECA Academy</p>
+      <p>Athurugiriya Road, Malabe</p>
+      <p>Colombo, Sri Lanka</p>
+    </div>
+
+    <div class="space-y-2">
+      <a href="index.html#contact" class="hover:underline block">Terms & Conditions</a>
+      <a href="index.html#contact" class="hover:underline block">Student Support</a>
+      <a href="index.html#contact" class="hover:underline block">Accessibility</a>
+    </div>
+
+    <div class="space-y-2">
+      <a href="index.html#home" class="hover:underline block">Visit AECA</a>
+      <a href="index.html#contact" class="hover:underline block">Contact Us</a>
+
+      <div class="flex space-x-4 mt-4 text-lg">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1CPq3tNn64/?mibextid=wwXIfr" target="_blank" class="hover:text-[#4267B2]">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 320 512">
+            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 
+            52.24-50.06h40.42V6.26S260.43 0 225.36 
+            0C141.09 0 89.09 44.38 89.09 124.72v70.62H0v92.66h89.09V512h107.8V288z"/>
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ielts_aeca?igsh=eXRpaDBsbmVzNmY2&utm_source=qr" target="_blank" class="hover:text-[#E1306C]"> <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512"> <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7 0-41.2 33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7c0 41.2-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-.5-35.3-9.9-66.7-36.3-93.1C382.8 38.7 351.4 29.3 316.1 28.8c-35.6-.6-142.5-.6-178.1 0-35.3.5-66.7 9.9-93.1 36.3C18.7 91.2 9.3 122.6 8.8 157.9c-.6 35.6-.6 142.5 0 178.1.5 35.3 9.9 66.7 36.3 93.1 26.4 26.4 57.8 35.8 93.1 36.3 35.6.6 142.5.6 178.1 0 35.3-.5 66.7-9.9 93.1-36.3 26.4-26.4 35.8-57.8 36.3-93.1.6-35.6.6-142.4 0-178z"/> </svg> </a>
+        
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/academy-of-english-for-career-advancement-2a30aa2b4/"
+           target="_blank"
+           class="hover:text-[#0077B5]">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512">
+            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-338C24.09 
+            110 0 85.4 0 54.5S24.09 0 53.84 
+            0s53.85 24.6 53.85 54.5S83.59 
+            110 53.84 110zm394.23 338h-92.68V312c0-32.4-.7-74.1-45.17-74.1 
+            -45.2 0-52.1 35.3-52.1 71.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 
+            42.7-48.2 87.88-48.2 94 0 111.28 
+            61.9 111.28 142.3V448z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-xs text-gray-400 mt-8">
+    © 2025 AECA Academy. All rights reserved.
+  </div>
+</footer>
+
+
+
+<!-- ✅ FINAL FIXED JAVASCRIPT ✅ -->
+<script>
+
+/* ✅ Expand / Collapse Courses */
+document.querySelectorAll(".toggle-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".course-card");
+    const moreText = card.querySelector(".more-text");
+
+    if (moreText.classList.contains("hidden")) {
+      moreText.classList.remove("hidden");
+      btn.textContent = "See less";
+    } else {
+      moreText.classList.add("hidden");
+      btn.textContent = "See more";
+    }
+  });
+});
+
+
+/* ✅ Mobile Menu Toggle */
+const toggleBtn = document.getElementById("mobileToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+toggleBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+
+/* ✅ Scroll-Spy Navigation Highlight */
+const sections = document.querySelectorAll("section[id]");
+const links = document.querySelectorAll(".nav-link");
+
+function activateNav() {
+  let scrollY = window.scrollY + 350;
+
+  sections.forEach(sec => {
+    if (scrollY >= sec.offsetTop && scrollY < sec.offsetTop + sec.offsetHeight) {
+
+      links.forEach(l => l.classList.remove("text-[#7c0000]", "bg-[#fbeaea]", "font-bold"));
+
+      const active = document.querySelector(`a[href="#${sec.id}"]`);
+      if (active) {
+        active.classList.add("text-[#7c0000]", "bg-[#fbeaea]", "font-bold");
+      }
+    }
+  });
+}
+
+window.addEventListener("scroll", activateNav);
+
+
+/* ✅ Smooth Scroll with header offset */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener("click", function(e) {
+    const id = this.getAttribute("href").replace("#", "");
+    const el = document.getElementById(id);
+
+    if (!el) return;
+
+    e.preventDefault();
+
+    const headerHeight = document.getElementById("header").offsetHeight;
+    const top = el.offsetTop - headerHeight - 10;
+
+    window.scrollTo({ top, behavior: "smooth" });
+
+    mobileMenu.classList.add("hidden");
+  });
+});
+
+</script>
+
+</body>
+</html>
